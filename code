@@ -1,0 +1,82 @@
+# main.py
+import random
+def diceRoll():
+  role=random.randint(1,6)
+  return role
+
+two=0
+three=0
+four=0
+five=0
+six=0
+seven=0
+eight=0
+nine=0
+ten=0
+eleven=0
+twelve=0
+
+for i in range(1000):
+  role1=diceRoll()
+  role2=diceRoll()
+  if role1+role2==2:
+    two+=1
+  if role1+role2==3:
+    three+=1
+  if role1+role2==4:
+    four+=1
+  if role1+role2==5:
+    five+=1
+  if role1+role2==6:
+    six+=1
+  if role1+role2==7:
+    seven+=1
+  if role1+role2==8:
+    eight+=1
+  if role1+role2==9:
+    nine+=1
+  if role1+role2==10:
+    ten+=1
+  if role1+role2==11:
+    eleven+=1
+  if role1+role2==12:
+    twelve+=1
+    
+    
+print(str(two/1000*100)+"% of your roles were two")
+print(str(three/1000*100)+"% of your roles were three")
+print(str(four/1000*100)+"% of your roles were four")
+print(str(five/1000*100)+"% of your roles were five")
+print(str(six/1000*100)+"% of your roles were six")
+print(str(seven/1000*100)+"% of your roles were seven")
+print(str(eight/1000*100)+"% of your roles were eight")
+print(str(nine/1000*100)+"% of your roles were nine")
+print(str(ten/1000*100)+"% of your roles were ten")
+print(str(eleven/1000*100)+"% of your roles were eleven")
+print(str(twelve/1000*100)+"% of your roles were twelve")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
